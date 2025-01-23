@@ -1,9 +1,10 @@
 ```mermaid
-    Attacker->>BotNet: Command to initiate DDoS attack
-    BotNet->>WebServer: Flood with excessive requests
-    WebServer->>Firewall: Alert: Overload detected
-    Firewall->>BotNet: Block malicious traffic
-    Firewall->>Attacker: Attempt trace and block
+sequenceDiagram
+Attacker->>BotNet: Command to initiate DDoS attack
+BotNet->>WebServer: Flood with excessive requests
+WebServer->>Firewall: Alert: Overload detected
+Firewall->>BotNet: Block malicious traffic
+Firewall->>Attacker: Attempt trace and block
 ```
 
 ## Description of SD
