@@ -1,1 +1,32 @@
+sequenceDiagram
+    participant Attacker
+    participant BotNet
+    participant WebServer
+    participant Firewall
 
+    Attacker->>BotNet: Command to initiate DDoS attack
+    BotNet->>WebServer: Flood with excessive requests
+    WebServer->>Firewall: Alert: Overload detected
+    Firewall->>BotNet: Block malicious traffic
+    Firewall->>Attacker: Attempt trace and block
+
+## Description of SD
+1. Attacker: 
+- Starts attack by sending commands to BotNet
+- Represents entity controlling malicious activity. 
+2. BotNet:
+- A group of compromised systems under the attacker's control.
+- Executes the attack by sending a s lot of requests to the WebServer.
+3. WebServer:
+- The target of the attack.
+- Struggles to handle the overwhelming traffic and sends an alert to the Firewall about the unusual activity.
+4. Firewall:
+- The defense mechanism in place.
+- Analyzes the traffic and identifies malicious patterns.
+- Blocks traffic from the BotNet and tries to trace the Attacker 
+
+## Steps in DDoS attack
+1. Attacker commands BotNet to initiate a attack
+2. BotNet sends an excessive number of requests to WebServer which overwhelms its resources and causes denial of service for actual users.
+3. WebServer detects overload and alerts Firewall
+4. Firewall analyzes traffic, blocks malicious requests, and tries to trace the soure of attack.
