@@ -22,7 +22,7 @@ Firewall->>Attacker: Attempt trace and block
 - Analyzes the traffic and identifies malicious patterns.
 - Blocks traffic from the BotNet and tries to trace the Attacker 
 
-## Steps in DDoS attack
+## Steps in attack
 1. Attacker commands BotNet to initiate a attack
 2. BotNet sends an excessive number of requests to WebServer which overwhelms its resources and causes denial of service for actual users.
 3. WebServer detects overload and alerts Firewall
