@@ -11,17 +11,17 @@ sequenceDiagram
     Firewall->>Attacker: Attempt trace and block
 
 ## Description of SD
-1. Attacker: 
+1. The Attacker: 
 - Starts attack by sending commands to BotNet
 - Represents entity controlling malicious activity. 
-2. BotNet:
+2. The BotNet:
 - A group of compromised systems under the attacker's control.
-- Executes the attack by sending a s lot of requests to the WebServer.
-3. WebServer:
+- Executes the attack by sending a lot of requests to the WebServer.
+3. The WebServer:
 - The target of the attack.
-- Struggles to handle the overwhelming traffic and sends an alert to the Firewall about the unusual activity.
-4. Firewall:
-- The defense mechanism in place.
+- Struggles to handle the overwhelming traffic and sends alert to Firewall about the unusual activity.
+4. The Firewall:
+- Is defense mechanism in place.
 - Analyzes the traffic and identifies malicious patterns.
 - Blocks traffic from the BotNet and tries to trace the Attacker 
 
