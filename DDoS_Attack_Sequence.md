@@ -1,16 +1,10 @@
 ```mermaid
-sequenceDiagram
-participant Attacker
-participant BotNet
-participant WebServer
-participant Firewall
-```
-
     Attacker->>BotNet: Command to initiate DDoS attack
     BotNet->>WebServer: Flood with excessive requests
     WebServer->>Firewall: Alert: Overload detected
     Firewall->>BotNet: Block malicious traffic
     Firewall->>Attacker: Attempt trace and block
+```
 
 ## Description of SD
 1. The Attacker: 
@@ -32,6 +26,3 @@ participant Firewall
 2. BotNet sends an excessive number of requests to WebServer which overwhelms its resources and causes denial of service for actual users.
 3. WebServer detects overload and alerts Firewall
 4. Firewall analyzes traffic, blocks malicious requests, and tries to trace the soure of attack.
-
-## Picture of Sequence Diagram 
-![Sequence Diagram](https://supabase.mermaidchart.com/storage/v1/object/public/chatgpt-diagrams/2025-01-23/5fb33b67-a28f-447e-85d4-32f8660d96df.png)
