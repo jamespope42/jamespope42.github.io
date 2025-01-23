@@ -10,7 +10,7 @@ _I am a new student at Wake Tech. I moved to North Carolina from Hawaii in 2022.
 * going on hikes
 * baking 
 * obsessed with weather phenomena
-* I use this [Website](https://weather.us/model-charts) to get updates on weather around the country. 
 ## Websites I recommend 
 - [Cool Math Games](https://www.coolmathgames.com/) - I find Cool Math Games a great way to pass time when bored.
 - [Google Scholar](https://scholar.google.com/) - Google Scholar is a great web browser if you are looking for reliable and trsutworthy information. 
+- [Model Charts](https://weather.us/model-charts) - Model Charts is a website I love to use to update me on weather round the country. 
