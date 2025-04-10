@@ -1,16 +1,17 @@
-// gradebook.js
-
+// TODO: Fetch data from the PostgreSQL database (to be implemented later)
 function fetchGradeData() {
-    console.log("fetchGradeData stub called");
-    // Future: fetch data from PostgreSQL
-  }
-  
-  function populateGradebook() {
-    console.log("populateGradebook stub called");
-    // Future: dynamically insert rows into the table
-  }
-  
-  // Trigger the stubs to show they are working
-  fetchGradeData();
-  populateGradebook();
-  
+  // This function will query the PostgreSQL database and return grade data
+  console.log("fetching grade data...");
+}
+
+// TODO: Populate the table with grade data
+function populateGradebook(data) {
+  // This function will take the fetched grade data and populate the table
+  console.log("Populating gradebook with data:", data);
+}
+
+// TODO REMOVE THIS
+// Call the stubs to demonstrate the workflow
+const gradeData = fetchGradeData();
+populateGradebook(gradeData);
+// END REMOVE
