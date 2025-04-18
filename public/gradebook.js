@@ -1,17 +1,17 @@
 // Fetch data from the Node.js backend
 async function fetchGradeData() {
   try {
-    const response = await fetch("/grades"); // <-- this must match your backend route
+    const response = await fetch("/grades");
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
     const data = await response.json();
-    console.log("Fetched grade data:", data);
     populateGradebook(data);
   } catch (error) {
     console.error("Error fetching grade data:", error);
   }
 }
+
 
 // Populate the gradebook table with data
 function populateGradebook(data) {
